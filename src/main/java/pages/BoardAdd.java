@@ -21,8 +21,8 @@ public class BoardAdd extends BasePage {
 
     private final By addListName = By.xpath("//*[@placeholder=\"Enter list title...\"]");
     private final By addListButton = By.xpath("//*[@id=\"app\"]//div[3]//div/button");
-    private final By actionButton = By.cssSelector("#app > div > div > div > div.py-2\\.5 > div:nth-child(3) > button");
-    private final By deleteButton = By.xpath("//*[text()=\"Delete board\"]");
+    private final By actionButton = By.cssSelector("div:nth-child(2) > div > div.flex.mb-1 > button > svg");
+    private final By deleteButton = By.xpath("//*[@data-cy=\"delete-list\"]");
 
     public WebElement getblankboardPage(){return elementWithWait(blankboardPage,"clickable");}
     public WebElement getblankboardTitle(){return elementWithWait(blankboardTitle,"clickable");}
